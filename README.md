@@ -27,15 +27,19 @@ This file contains the architecture (number of layers, cell types, layer sizes e
 This file contains the actual connection weights for the neural network architecture in the corresponding .json file
 
 - positive_model.json
+
 See above; architecture of neural network trained on positive_headlines.csv
 
 - positive_model.h5
+
 See above; connection weights of neural network described in above .json
 
 - headline_image.jpg
+
 Image returned from querying Bing for the generated headline
 
 - new_headline.pdf
+
 Sample output generated from the negative_model
 
 
