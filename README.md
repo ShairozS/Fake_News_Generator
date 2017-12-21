@@ -3,6 +3,9 @@
 ### Explanation
 The code contained in this repo is an attempt to use modern techniques in artificial intelligence and machine learning to create fake news headlines. The essence of this process is a dataset of a million real headlines[1] and a Long Short Term Memory (LSTM) neural network trained at a character level on two subsets of this text[2]. There is an additional sentiment analysis component to speed up training time for the network and allow for some control over what kind of headlines are produced. The Vader[3] pre-trained sentiment analyzer was used for the purpose of seperating headlines based on positive or negative sentiment and seperate LSTM networks were trained on each of these sets. Producing a new headline starts with a randomly selected seed text from the existing headlines, and a generation of n characters based on that seed text. A diversity parameter controls the 'randomness' of next character chosen, based on conditional probability given the already generated text. File summaries are as follows:
 
+### Usage Tutorial
+https://youtu.be/TFCXgz-q3N0
+
 ### Files
 
 - generate_fake_news.ipynb:
