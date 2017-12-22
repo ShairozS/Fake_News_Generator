@@ -59,6 +59,13 @@ Image returned from querying Bing for the generated headline
 
 Sample output generated from the negative_model
 
+- Profile_Picture.jpg
+
+Placeholder image in case API is experiancing an intermittent failure
+
+- quick_generate.py
+
+This file is meant to be self-contained and run from terminal. Has same output as main program and easier to run if you don't want to go through Jupyter notebook
 
 
 
