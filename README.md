@@ -27,10 +27,12 @@ https://youtu.be/TFCXgz-q3N0
 > clean_sentence(sentence, shortstop=False)
 
 INPUTS 
+
 -sentence = string
 -shortstop = boolean
 
 OUTPUT
+
 -string 
 
 This function cleans the input <sentence> by removing numbers, non-english words/characters. If <shortstop> is True, then this function truncates the sentence after the last english stopword, this is done to try to reduce incomplete clauses caused by setting the length argument in get_headline too small.
@@ -38,10 +40,12 @@ This function cleans the input <sentence> by removing numbers, non-english words
 > get_headline(seed='The', sentiment = 'positive', lenght=50, diversity=0.2)
 
 INPUTS 
+
 -sentence = string
 -shortstop = boolean
 
 OUTPUT
+
 -string 
 
 
@@ -50,20 +54,25 @@ This is the central function of this program, it uses positive or negative_model
 >BingImageSearch(search)
 
 INPUTS 
+
 -search = string
 
 OUTPUT
+
 -HTTPObject 
 
 This function queries the Bing Image API and returns a HTTPObject from the first result for the <search> string. 
   
  >save_image(http_response, filepath='image_result.jpg')
+ 
  This function operates on the output of BingImageSearch() to convert the returned HTTPObject into an image file at <filepath>
   
- - generate_headline_document(headline_text, headline_image, filename='new_headline.pdf'):
+ - generate_headline_document(headline_text, headline_image, filename='new_headline.pdf')
+ 
  This function uses the Reportlab library to generate a .pdf file with the <headline_text> string and <headline_image> image file at <filename>. This is mainly a helper function for generate_fake_news().
   
  >generate_fake_news(sentiment)
+ 
  This function uses all the functions above to generate a .pdf file of a fake news report at new_headline.pdf (unless the default above is changed). A sample output can be seen in this repo at new_headline.pdf. 
 
 ### Files
