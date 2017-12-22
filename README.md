@@ -111,7 +111,7 @@ Main notebook used to produce fake news headlines. Depends on the existence of a
 
 - positive_headlines_mini.csv
 
-Data file for headlines with a Vader aggregate sentiment score >= 0. Data is comma-seperated with dimensions (). The 'mini' addition at the end is to indicate this is ~90% of the actual positive headline data used to train the model, this is to stay under the 25mb github upload limit. This does not affect prediction and since the model is not trained nearly to max performance, should minimally affect model training. In the future, would like to host all training data on Amazon S3, however a current attempt at this introduces too many dependencies.
+Data file for headlines with a Vader aggregate sentiment score >= 0. Data is comma-seperated with dimensions (554712,2). The 'mini' addition at the end is to indicate this is ~90% of the actual positive headline data used to train the model, this is to stay under the 25mb github upload limit. This does not affect prediction and since the model is not trained nearly to max performance, should minimally affect model training. In the future, would like to host all training data on Amazon S3, however a current attempt at this introduces too many dependencies.
 
 - negative_headlines.csv
 
