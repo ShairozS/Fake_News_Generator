@@ -14,7 +14,7 @@ Python Packages:
 
 
 ### Usage Tutorial
-THIS PROGRAM BUILT AND TESTED WITH PYTHON 3
+THIS PROGRAM BUILT AND TESTED WITH PYTHON 3 - MAC (OS X El Capitan)
 
 https://youtu.be/TFCXgz-q3N0
 
