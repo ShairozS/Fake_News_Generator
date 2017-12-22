@@ -12,6 +12,9 @@ Python Packages:
 - Pandas
 - Sklearn
 
+### Implementation
+See Natural Langauge Generation.ipynb and main.ipynb
+
 
 ### Usage Tutorial
 THIS PROGRAM BUILT AND TESTED WITH PYTHON 3 - MAC (OS X El Capitan)
@@ -19,6 +22,51 @@ THIS PROGRAM BUILT AND TESTED WITH PYTHON 3 - MAC (OS X El Capitan)
 https://youtu.be/TFCXgz-q3N0
 
 * In case the above process doesn't work, and you are familiar enough with Python to have installed the dependencies above, you can simply run quick_generate.py from terminal. 
+
+### Included Functions
+- clean_sentence(sentence, shortstop=False)
+
+INPUTS 
+
+sentence = string
+shortstop = boolean
+
+OUTPUT
+
+string 
+
+This function cleans the input <sentence> by removing numbers, non-english words/characters. If <shortstop> is True, then this function truncates the sentence after the last english stopword, this is done to try to reduce incomplete clauses caused by setting the length argument in get_headline too small.
+
+- get_headline(seed='The', sentiment = 'positive', lenght=50, diversity=0.2)
+
+INPUTS 
+-sentence = string
+-shortstop = boolean
+
+OUTPUT
+-string 
+
+
+This is the central function of this program, it uses positive or negative_model.json and negative_model.h5 to recreate the trained neural network and then uses sample() to generate new text (character-by-character). The <length> specifies the desired length (in characters) of the generated text, while <sentiment> controls whether sampling should be done from the model trained on negative headlines or positive headlines, and <diversity> controls the degree of deviation from the estimated distribution (essentially, the randomness) in the generated text.
+  
+- BingImageSearch(search)
+
+INPUTS 
+-search = string
+
+OUTPUT
+-HTTPObject 
+
+This function queries the Bing Image API and returns a HTTPObject from the first result for the <search> string. 
+  
+ - save_image(http_response, filepath='image_result.jpg')
+ This function operates on the output of BingImageSearch() to convert the returned HTTPObject into an image file at <filepath>
+  
+ - generate_headline_document(headline_text, headline_image, filename='new_headline.pdf'):
+ This function uses the Reportlab library to generate a .pdf file with the <headline_text> string and <headline_image> image file at <filename>. This is mainly a helper function for generate_fake_news().
+  
+ - generate_fake_news(sentiment)
+ This function uses all the functions above to generate a .pdf file of a fake news report at new_headline.pdf (unless the default above is changed). A sample output can be seen in this repo at new_headline.pdf. 
 
 ### Files
 
