@@ -6,6 +6,8 @@ The code contained in this repo is an attempt to use modern techniques in artifi
 ### Usage Tutorial
 https://youtu.be/TFCXgz-q3N0
 
+* In case the above process doesn't work, and you are familiar enough with Python to have installed the dependencies above, you can simply run quick_generate.py from terminal. 
+
 ### Files
 
 - generate_fake_news.ipynb:
