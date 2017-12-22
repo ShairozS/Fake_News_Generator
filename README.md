@@ -14,6 +14,8 @@ Python Packages:
 
 
 ### Usage Tutorial
+THIS PROGRAM BUILT AND TESTED WITH PYTHON 3
+
 https://youtu.be/TFCXgz-q3N0
 
 * In case the above process doesn't work, and you are familiar enough with Python to have installed the dependencies above, you can simply run quick_generate.py from terminal. 
