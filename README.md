@@ -24,20 +24,18 @@ https://youtu.be/TFCXgz-q3N0
 * In case the above process doesn't work, and you are familiar enough with Python to have installed the dependencies above, you can simply run quick_generate.py from terminal. 
 
 ### Included Functions
-- clean_sentence(sentence, shortstop=False)
+> clean_sentence(sentence, shortstop=False)
 
 INPUTS 
-
 sentence = string
 shortstop = boolean
 
 OUTPUT
-
-string 
+-string 
 
 This function cleans the input <sentence> by removing numbers, non-english words/characters. If <shortstop> is True, then this function truncates the sentence after the last english stopword, this is done to try to reduce incomplete clauses caused by setting the length argument in get_headline too small.
 
-- get_headline(seed='The', sentiment = 'positive', lenght=50, diversity=0.2)
+> get_headline(seed='The', sentiment = 'positive', lenght=50, diversity=0.2)
 
 INPUTS 
 -sentence = string
