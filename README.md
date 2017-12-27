@@ -150,5 +150,9 @@ Placeholder image in case API is experiancing an intermittent failure
 This file is meant to be self-contained and run from terminal. Has same output as main program and easier to run if you don't want to go through Jupyter notebook
 
 
+### References
+[1] https://www.kaggle.com/therohk/million-headlines
 
-### 
+[2] https://github.com/keras-team/keras/blob/master/examples/lstm_text_generation.py
+
+[3] https://github.com/cjhutto/vaderSentiment
